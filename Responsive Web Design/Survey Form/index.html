@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a short survey used to improve our services!</p>
+  </head>
+  <body>
+    <form id="survey-form">
+
+      <label for="first-name" id="name-label">Name: <input placeholder="Enter Your Name" id="name" name"first-name" type="text" required></>
+      
+      <label for="email" id="email-label">Email: <input placeholder="Enter Your Email" id="email" name"email" type="email" required></>
+
+      <label for="age" id="number-label">Age: <input placeholder="Enter Your Number" id="number" name"age" type="number" min="10" max="100"></>
+
+      <label for="referrer">Which option best describes you?
+          <select id="dropdown" name="dropdown">
+            <option value="one">(Select Current Role)</option>
+            <option value="two">Engineer</option>
+            <option value="three">Front-end Designer</option>
+            <option value="four">Web Developer</option>
+
+
+      <label><input type="radio" name="radioButton" value="definitely" checked /> Definitely</label>
+      <label><input type="radio" name="radioButton" value="maybe" checked /> Maybe</label>
+      <label><input type="radio" name="radioButton" value="not sure" checked /> Not Sure</label>
+
+      <label for="eggs">
+    <input class="inline" id="eggs" type="checkbox" value="Eggs" name="eggs" />
+    Eggs
+</label>
+<label for="chicken">
+    <input class="inline" id="chicken" type="checkbox" value="Chicken" name="chicken" />
+    Chicken
+</label>
+<label for="beef">
+    <input class="inline" id="beef" type="checkbox" value="Beef" name="beef" />
+    Beef
+</label>
+<label for="fish">
+    <input class="inline" id="fish" type="checkbox" value="Fish" name="fish" />
+    Fish
+</label>
+<label for="rabbit">
+    <input class="inline" id="rabbit" type="checkbox" value="Rabbit" name="rabbit" />
+    Rabbit
+</label>
+
+<textarea id="info" name="info" rows="3" cols="30" placeholder="Enter additional comments!"></textarea>
+
+<input id="submit" type="submit" value="Submit" />
+    </form>
+
+  </body>
+</html>

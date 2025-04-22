@@ -1,0 +1,66 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    padding: 10px;
+}
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+#navbar ul li {
+    margin: 0 15px;
+}
+#navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Welcome Section */
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px;
+    text-align: center;
+}
+.project-tile {
+    background: lightgray;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Media Query */
+@media (max-width: 600px) {
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-tile {
+        width: 100%;
+    }
+}
